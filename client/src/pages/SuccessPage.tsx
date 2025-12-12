@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function SuccessPage() {
   const [timeRemaining, setTimeRemaining] = useState(6);
-  const channelDestination = "https://t.me/+qyTeUgsGYGdhY2M8";
+  const channelDestination = "https://t.me/+JR-RXRoIm8o1YWRk";
 
   useEffect(() => {
     // STEP 1: Fire Lead event FIRST (before any redirect)
@@ -20,7 +20,7 @@ export default function SuccessPage() {
     }
 
     // STEP 3: DOM interaction listener for Meta validation
-    const continueBtn = document.getElementById("continue-btn");
+    const continueBtn = document.getElementById("continue-btn-dg4");
     if (continueBtn) {
       continueBtn.addEventListener("click", function() {
         console.log("Lead confirmation interaction registered.");
@@ -46,7 +46,7 @@ export default function SuccessPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black flex items-center justify-center p-4">
-      <div id="confirmation-box" className="max-w-md w-full bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-cyan-500/20">
+      <div id="confirmation-box-dg4" className="max-w-md w-full bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 text-center border border-cyan-500/20">
         <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 flex items-center justify-center">
           <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -66,7 +66,7 @@ export default function SuccessPage() {
         </div>
         
         <button
-          id="continue-btn"
+          id="continue-btn-dg4"
           data-testid="button-continue"
           className="w-full py-3 px-6 bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
         >
@@ -79,7 +79,7 @@ export default function SuccessPage() {
       </div>
       
       {/* Fingerprint marker */}
-      <div style={{height: '1px', opacity: 0}} data-success-fp="v11" aria-hidden="true" />
+      <div style={{height: '1px', opacity: 0}} data-success-fp="dg4" aria-hidden="true" />
     </div>
   );
 }
